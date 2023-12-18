@@ -1,0 +1,123 @@
+body{
+    background-image: linear-gradient(to right,white,rgb(163, 155, 236));
+}
+
+.wrapper, .search-result{
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    max-width: 450px;
+}
+
+.movie-details{
+    margin-top: 50px;
+    margin-left: 25%;
+    display: flex;
+    background-color: #8eb9b6;
+    max-width: 600px;
+    box-shadow: 0px 0px 6px 0px #000000;
+}
+
+#details-container{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#poster-container img{
+  object-fit: contain;
+}
+
+.wrapper .input-box{
+    height: 37px;
+    width: 99%;
+    outline: none;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+
+.wrapper .container{
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.search-result{
+    background-color: #ffffff;
+    max-width: 450px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#result-list,#fav-list{
+    position: absolute; 
+    background-color: #eeeeee;
+    top: 47px;
+    overflow-y: scroll;
+    max-height: 200px;
+    list-style: none;
+    cursor: pointer;
+    color: rgb(102, 92, 92);
+    width: 450px;
+}
+
+#result-list li:hover{
+    background-color: rgb(137, 137, 137);
+    color: rgb(0, 0, 0);
+}
+
+#result-list li{
+    margin-left: 5px;
+}
+
+#fav:hover{
+    cursor: pointer;
+}
+
+
+.favorite, #fav-list{
+    font-family: 'Caveat', cursive;
+    position: fixed;
+    margin-left: 650px;
+    list-style: none;
+}
+
+#title{
+    font-family: 'Rubik Distressed', cursive;
+    margin-top: 5px;
+    margin-left: 130px;
+    position: absolute;
+    font-weight: 100;
+    font-size: x-large;
+}
+
+#fav-list{
+    box-shadow: 0px 0px 6px 0px #000000;
+    max-width: 200px;
+    background-color: #ffffff;
+    display: none;
+}
+
+#fav-list li{
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#fav-list li span:hover{
+    color: #000000;
+}
+
+.favorite:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#details-container{
+    background-color: #8eb9b6;
+    font-family: 'Lobster', cursive;
+}
